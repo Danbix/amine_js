@@ -17,7 +17,7 @@ const checkValidation = (input, validationFunc) => {
             return true;
         }
         else {
-            document.getElementById(`${input.id}error`).innerHTML="</br><span>Your input is not valide</span>"
+            document.getElementById(`${input.id}error`).innerHTML="</br><span>Your input is not valid</span>"
             input.style.border="1px solid red";
             return false;
         }
