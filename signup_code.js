@@ -12,12 +12,12 @@ const checkValidation = (input, validationFunc) => {
     input.addEventListener("keyup",()=>{
         let inputValue = input.value;
         if(validationFunc(inputValue)){
-            document.getElementById(`${input.id}error`).innerHTML='</br><span class="valide">valide</span>';
+            document.getElementById(`${input.id}error`).innerHTML='</br><span class="valide">Correct</span>';
             input.style.border="1px solid green";
             return true;
         }
         else {
-            document.getElementById(`${input.id}error`).innerHTML="</br><span>the input is not valid</span>"
+            document.getElementById(`${input.id}error`).innerHTML="</br><span>Your input is not valide</span>"
             input.style.border="1px solid red";
             return false;
         }
